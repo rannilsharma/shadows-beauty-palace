@@ -268,7 +268,7 @@ header p {
   align-items: center;
   justify-content: center; /* Center the checkbox and label */
   gap: 0.5rem;
-  margin-top: 1rem;
+  margin-top: 0.8rem;
   margin-bottom: 2rem;
   color: gold;
   text-align: center;
@@ -276,7 +276,7 @@ header p {
 }
 
 .checkbox-wrapper input[type="checkbox"] {
-  transform: scale(1.2); /* Slightly bigger */
+  transform: scale(1.1); /* Slightly bigger */
   margin: 0;
   width: auto;
   height: auto;
@@ -353,6 +353,7 @@ select {
 
 .checkbox-wrapper label {
   color: gold;
+  font-size: 13px;
 }
 
 .checkbox-wrapper input {
