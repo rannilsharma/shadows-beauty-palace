@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Our Services</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h2 style="text-align:center">Explore Our Services</h2>
+    <div class="category-grid" id="categoryGrid"></div>
+  </main>
+
+  <footer style="background-color: #002b5c; color: white; text-align: center; padding: 15px 0;">
+    &copy; 2025 Shadows Beauty Palace
+  </footer>
+
+  <!-- Firebase SDK -->
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+  <script>
+    const firebaseConfig = {
+      apiKey: "AIzaSyAkIKPlKBQWeTnD3nK-EAdU33FSMiEwj0s",
+      authDomain: "shadows-beauty-palace.firebaseapp.com",
+      projectId: "shadows-beauty-palace",
+    };
+    firebase.initializeApp(firebaseConfig);
+    const db = firebase.firestore();
+  </script>
+  <script src="services.js"></script>
+</body>
+</html>

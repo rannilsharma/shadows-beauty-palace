@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Manage Appointments</title>
+  <link rel="stylesheet" href="style.css" />
+  
+</head>
+<body>
+  <main>
+    <h2 style="text-align: center;">Manage Your Appointments</h2>
+
+    <form id="lookupForm" style="text-align: center; margin-top: 1rem;">
+      <label for="lookupPhone">Enter your phone number:</label><br><br>
+      <input type="text" id="lookupPhone" required />
+      <button type="submit" class="btn">Find My Appointments</button>
+    </form>
+
+    <div id="appointmentsContainer" style="margin-top: 2rem;"></div>
+  </main>
+
+  <footer>
+    &copy; 2025 Shadows Beauty Palace
+  </footer>
+
+  <!-- Firebase SDKs -->
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+
+  <!-- JS Logic -->
+  <script src="manage.js"></script>
+</body>
+</html>

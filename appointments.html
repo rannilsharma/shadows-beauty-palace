@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Book Appointment</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  
+</head>
+<body>
+  <header>
+    <h1>Book Your Appointment</h1>
+  </header>
+
+  <main class="form-container">
+    <form id="appointmentForm">
+      <label>Name:</label>
+      <input type="text" id="name" required />
+
+      <label>Phone Number:</label>
+      <input type="tel" id="phone" required />
+
+      <label>Service:</label>
+      <select id="service" required>
+        <option value="">-- Loading Services... --</option>
+      </select>
+
+      <label>Date:</label>
+      <input type="date" id="date" required />
+
+      <label>Time:</label>
+      <input type="time" id="time" required />
+
+      <div class="checkbox-wrapper" style="display: flex; align-items: center; justify-content: center; gap: 0.5rem; margin-top: 1rem;">
+        <input type="checkbox" id="confirm" required />
+        <label for="confirm">I confirm that all details entered are correct.</label>
+      </div>
+
+      <div class="button-wrapper">
+        <button type="submit" class="btn">Book Now</button>
+      </div>
+
+      <p class="privacy-note">🔒 Your phone number is used only for confirming and managing your appointment.</p>
+      <p id="status"></p>
+    </form>
+
+    <div class="manage-bookings-link" style="text-align:center; margin-top: 2rem;">
+      <p>Need to change or cancel a booking?</p>
+      <a href="manage.html" class="btn">Modify / Cancel Appointment</a>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Shadows Beauty Palace
+  </footer>
+
+  <!-- Firebase SDKs -->
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+  <script src="appointments.js"></script>
+</body>
+</html>
