@@ -6,7 +6,6 @@
   <title>Book Appointment</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-  
 </head>
 <body>
   <header>
@@ -15,29 +14,41 @@
 
   <main class="form-container">
     <form id="appointmentForm">
-      <label>Name:</label>
-      <input type="text" id="name" required />
 
-      <label>Phone Number:</label>
-      <input type="tel" id="phone" required />
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required />
+      </div>
 
-      <label>Service:</label>
-      <select id="service" required>
-        <option value="">-- Loading Services... --</option>
-      </select>
+      <div class="form-group">
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" required />
+      </div>
 
-      <label>Date:</label>
-      <input type="date" id="date" required />
+      <div class="form-group">
+        <label for="service">Service:</label>
+        <select id="service" required>
+          <option value="">-- Loading Services... --</option>
+        </select>
+      </div>
 
-      <label>Time:</label>
-      <input type="time" id="time" required />
+      <div class="form-group">
+        <label for="date">Date:</label>
+        <input type="date" id="date" required />
+      </div>
 
-      <div class="checkbox-wrapper" style="display: flex; align-items: center; justify-content: center; gap: 0.5rem; margin-top: 1rem;">
+      <div class="form-group">
+        <label for="time">Time:</label>
+        <input type="time" id="time" required />
+      </div>
+
+      <div class="checkbox-wrapper">
         <input type="checkbox" id="confirm" required />
         <label for="confirm">I confirm that all details entered are correct.</label>
       </div>
 
-      <div class="button-wrapper">
+
+      <div class="form-group button-wrapper">
         <button type="submit" class="btn">Book Now</button>
       </div>
 

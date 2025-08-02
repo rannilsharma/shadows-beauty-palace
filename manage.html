@@ -8,14 +8,16 @@
   
 </head>
 <body>
-  <main>
+  <main class="manage-container">
     <h2 style="text-align: center;">Manage Your Appointments</h2>
 
-    <form id="lookupForm" style="text-align: center; margin-top: 1rem;">
+    <form id="lookupForm" class="manage-form">
       <label for="lookupPhone">Enter your phone number:</label><br><br>
-      <input type="text" id="lookupPhone" required />
+      <input type="text" id="lookupPhone" required /><br><br>
       <button type="submit" class="btn">Find My Appointments</button>
     </form>
+
+
 
     <div id="appointmentsContainer" style="margin-top: 2rem;"></div>
   </main>

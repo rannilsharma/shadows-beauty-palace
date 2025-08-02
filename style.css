@@ -265,19 +265,26 @@ header p {
 
 .checkbox-wrapper {
   display: flex;
-  flex-direction: row; /* changed from column to row */
   align-items: center;
-  justify-content: center;
+  justify-content: center; /* Center the checkbox and label */
   gap: 0.5rem;
-  margin-top: 1.5rem;
-  font-size: 0.95rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  color: gold;
+  text-align: center;
+  flex-wrap: wrap;
 }
 
-
 .checkbox-wrapper input[type="checkbox"] {
-  transform: scale(1.6);
-  cursor: pointer;
-  accent-color: #e6b800; /* Gold color used on user site */
+  transform: scale(1.2); /* Slightly bigger */
+  margin: 0;
+  width: auto;
+  height: auto;
+}
+
+.checkbox-wrapper label {
+  font-weight: 500;
+  line-height: 1.2;
 }
 
 
@@ -305,4 +312,173 @@ footer {
       color: white;
       text-align: center;
       padding: 15px 0;
+}
+
+
+
+.form-container {
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #1a1a1a;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.2); /* subtle gold glow */
+  box-sizing: border-box;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: gold;
+}
+
+input,
+select {
+  padding: 0.5rem;
+  width: 100%;
+  max-width: 100%;
+  border: 1px solid gold;
+  border-radius: 4px;
+  font-size: 1rem;
+  background-color: #222;
+  color: #fff;
+  box-sizing: border-box;
+  margin-bottom: 1.5rem;
+}
+
+.checkbox-wrapper label {
+  color: gold;
+}
+
+.checkbox-wrapper input {
+  accent-color: gold;
+}
+
+.btn {
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  border: none;
+  background-color: gold;
+  color: #000;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #e6c200;
+}
+
+.privacy-note {
+  font-weight: bold;
+  margin-top: 2rem;
+  color: white;
+  text-align: center;
+}
+
+#status {
+  font-size: 0.9rem;
+  color: #bbb;
+  margin-top: -1rem;
+}
+
+
+input[type="date"],
+input[type="time"] {
+  color: white; /* input text color */
+  background-color: #222; /* match your theme */
+  border: 1px solid gold;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+/* Force gold calendar/clock icon in WebKit browsers */
+input[type="date"]::-webkit-calendar-picker-indicator,
+input[type="time"]::-webkit-calendar-picker-indicator {
+  filter: invert(92%) sepia(50%) saturate(300%) hue-rotate(10deg);
+  cursor: pointer;
+}
+
+
+.manage-container {
+  max-width: 600px;
+  width: 90%;
+  margin: 2rem auto;
+  background-color: #1a1a1a;
+  color: white;
+  padding: 3rem;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.2);
+  box-sizing: border-box;
+}
+
+
+
+.manage-container input[type="text"] {
+  width: 80%;
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  background-color: #222;
+  color: #fff;
+}
+
+.manage-container label {
+  font-weight: bold;
+  color: gold;
+}
+
+.manage-container button.btn {
+  background-color: gold;
+  color: #000;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.manage-container button.btn:hover {
+  background-color: #ffcc00;
+}
+
+
+.manage-form {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.manage-form input[type="text"],
+.manage-form button.btn {
+  width: 220px;
+  padding: 0.6rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin: 0 auto; /* centers the element */
+  display: block;
+}
+
+.manage-form input[type="text"] {
+  background-color: #222;
+  color: #fff;
+  border: 1px solid #ccc;
+}
+
+.manage-form button.btn {
+  background-color: gold;
+  color: #000;
+  border: none;
+  font-weight: bold;
+}
+
+.manage-form button.btn:hover {
+  background-color: #ffcc00;
 }
